@@ -16,7 +16,7 @@ module.exports = {
           '.tsx',
         ]
       }
-    }
+    },
   },
   globals: {
     Atomics: 'readonly',
@@ -52,15 +52,13 @@ module.exports = {
         tsx: 'never'
       }
     ],
-    'import/no-unresolved': [
-      'error',
-      {
-        ignore: [ '\.svg' ]
-      }
-    ],
+    'import/no-unresolved': 'off',
     'arrow-parens': 'off',
     'no-console': 'off',
     'operator-linebreak': 'off',
+    'import/prefer-default-export': 'off',
+    'react/button-has-type': 'off',
+    'object-curly-newline': 'off',
     'prettier/prettier': [
       'error',
       {
