@@ -20,7 +20,7 @@
     "react-timer-hook": "^2.0.3",
     "react-webcam": "^5.2.1",
     "skyway-js": "3.1.0",
-    "typescript": "3.9.3"
+    "typescript": "3.9.7"
   },
   "scripts": {
     "start": "react-scripts start",
