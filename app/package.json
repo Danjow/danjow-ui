@@ -9,7 +9,7 @@
     "@testing-library/react": "9.5.0",
     "@testing-library/user-event": "12.2.0",
     "@types/jest": "26.0.15",
-    "@types/node": "12.12.42",
+    "@types/node": "12.19.3",
     "@types/react": "16.9.35",
     "@types/react-dom": "16.9.9",
     "@types/react-pdf": "^5.0.0",
