@@ -1324,7 +1324,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@material-ui/core@^4.11.0":
+"@material-ui/core@4.11.0":
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.11.0.tgz#b69b26e4553c9e53f2bfaf1053e216a0af9be15a"
   integrity sha512-bYo9uIub8wGhZySHqLQ833zi4ZML+XCBE1XwJ8EuUVSpTWWG57Pm+YugQToJNFsEyiKFhPh8DPD0bgupz8n01g==
@@ -1721,7 +1721,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-pdf@^5.0.0":
+"@types/react-pdf@5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@types/react-pdf/-/react-pdf-5.0.0.tgz#cb574e08929944c0b60fcce8cc569da1c94c9cc4"
   integrity sha512-G5S6BzzRJIwFpLIjqfNUzm0e0MNxM4KpcHbKif4U/AF44MBiuWqsjw+t7xpI3poZdEtLF0fKd8kRnrMCJwH/iQ==
@@ -9744,7 +9744,7 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
-react-pdf@^5.0.0:
+react-pdf@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/react-pdf/-/react-pdf-5.0.0.tgz#baddeecd5c5ef92ae57aed1ee141203ad14d4b5d"
   integrity sha512-VpqZjpZGEevmotLYl6acU6GYQeJ0dxn9+5sth5QjWLFhKu0xy3zSZgt3U3m97zW6UWzQ/scvw5drfPyun5l4eA==
@@ -9817,7 +9817,7 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-timer-hook@^2.0.3:
+react-timer-hook@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/react-timer-hook/-/react-timer-hook-2.0.3.tgz#4dd6c4d78b489b41d9af9c1319c025d1caa5d8fa"
   integrity sha512-9+O4P0m+ALzAoJXyDx/enxefWLXjkiX3SmU2sssHv1JT6hWSacMTqotT0nvD+zaoAwS0fgnOaKUGe0R/r4TyaQ==
@@ -9832,7 +9832,7 @@ react-transition-group@^4.4.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react-webcam@^5.2.1:
+react-webcam@5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/react-webcam/-/react-webcam-5.2.1.tgz#927f4542cdee1b21e1876e24feb9fd120655e2a3"
   integrity sha512-3Bz6V75Dy9Ecv6hvhlR8JVP123iiceM143B5P5cym1v7vSLrNzCEZSPJqFIN05hHiT7BwtCtqs5mNoILSUQTpw==
