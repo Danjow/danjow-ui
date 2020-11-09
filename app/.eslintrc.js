@@ -37,6 +37,7 @@ module.exports = {
     'jest-dom',
   ],
   rules: {
+    'max-len': 'off',
     semi: 'off',
     'react/jsx-filename-extension': 
     [1,
