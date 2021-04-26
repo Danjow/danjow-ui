@@ -16,7 +16,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-pdf": "^5.0.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "4.0.3",
     "react-timer-hook": "^2.0.3",
     "react-webcam": "^5.2.1",
     "skyway-js": "3.1.0",
