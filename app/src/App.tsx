@@ -1,8 +1,9 @@
-import React from 'react'
-import { MainUI } from './containers/MainUI'
+import { Meeting } from './features/meeting/Meeting'
 
-export const App = () => (
+const App = () => (
   <div>
-    <MainUI />
+    <Meeting />
   </div>
 )
+
+export default App

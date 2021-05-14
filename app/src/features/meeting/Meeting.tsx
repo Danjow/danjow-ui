@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Webcam from 'react-webcam'
 import { Document, pdfjs, Page } from 'react-pdf'
 import { makeStyles } from '@material-ui/core/styles'
-import { useTimer } from 'react-timer-hook'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
@@ -36,22 +35,7 @@ const useStyles = makeStyles({
   },
 })
 
-function MyTimer() {
-  const classes = useStyles()
-  const t = new Date()
-  const expiryTimestamp = t.setSeconds(t.getSeconds() + 300)
-  const { seconds, minutes, restart } = useTimer({
-    expiryTimestamp,
-    onExpire: () => {
-      const time = new Date()
-      restart(time.setSeconds(time.getSeconds() + 300))
-    },
-  })
-
-  return <div className={classes.timer}>{`${minutes}:${Math.floor(seconds / 10)}${seconds % 10}`}</div>
-}
-
-export const MainUI = () => {
+export const Meeting = () => {
   const classes = useStyles()
   const [base64, setBase64] = useState<string>('')
   const [numPages, setNumPages] = useState<number>(1)
@@ -59,9 +43,6 @@ export const MainUI = () => {
 
   return (
     <div className={classes.container}>
-      <div className={classes.timer}>
-        <MyTimer />
-      </div>
       <div className={classes.presenter}>
         <div className={classes.slide}>
           {base64 ? (

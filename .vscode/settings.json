@@ -6,6 +6,6 @@
   "eslint.format.enable": true,
   "eslint.packageManager": "yarn",
   "eslint.workingDirectories": ["./app"],
-  "eslint.enable": true,
+  "eslint.run": "onSave",
   "typescript.tsdk": "app/node_modules/typescript/lib"
 }
