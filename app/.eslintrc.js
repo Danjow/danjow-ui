@@ -4,18 +4,12 @@ module.exports = {
     es2020: true,
     jest: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb'],
   settings: {
     'import/resolver': {
       node: {
-        extensions: [
-          '.ts',
-          '.tsx',
-        ]
-      }
+        extensions: ['.ts', '.tsx'],
+      },
     },
   },
   globals: {
@@ -30,28 +24,18 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'eslint-plugin-prettier',
-    'jest-dom',
-  ],
+  plugins: ['react', '@typescript-eslint', 'eslint-plugin-prettier', 'jest-dom'],
   rules: {
     'max-len': 'off',
     semi: 'off',
-    'react/jsx-filename-extension': 
-    [1,
-      { extensions: 
-        ['.ts', '.tsx']
-      }
-    ],
+    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
     'import/extensions': [
       'error',
       'ignorePackages',
       {
         ts: 'never',
-        tsx: 'never'
-      }
+        tsx: 'never',
+      },
     ],
     'import/no-unresolved': 'off',
     'arrow-parens': 'off',
@@ -60,6 +44,11 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/button-has-type': 'off',
     'object-curly-newline': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'no-param-reassign': 'off',
     'prettier/prettier': [
       'error',
       {
@@ -75,6 +64,7 @@ module.exports = {
         proseWrap: 'preserve',
         htmlWhitespaceSensitivity: 'css',
         endOfLine: 'auto',
-      }]
+      },
+    ],
   },
-};
+}
