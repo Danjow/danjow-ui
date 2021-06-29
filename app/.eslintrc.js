@@ -24,7 +24,7 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'eslint-plugin-prettier', 'jest-dom'],
+  plugins: ['react', '@typescript-eslint', 'eslint-plugin-prettier', 'jest-dom', 'react-app'],
   rules: {
     'max-len': 'off',
     semi: 'off',
