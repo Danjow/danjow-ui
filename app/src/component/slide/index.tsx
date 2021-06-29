@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Document, pdfjs, Page } from 'react-pdf'
 import { makeStyles } from '@material-ui/core/styles'
+import Slider from '@material-ui/core/Slider'
+import url from '@/pdf/sample.pdf'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
@@ -11,7 +13,7 @@ const useStyles = makeStyles({
   slideView: {
     height: 450,
   },
-  slideButton: {
+  slideUI: {
     height: 50,
     textAlign: 'center',
   },
@@ -19,37 +21,25 @@ const useStyles = makeStyles({
 
 export const Slide = () => {
   const classes = useStyles()
-  const [base64, setBase64] = useState<string>('')
   const [numPages, setNumPages] = useState<number>(1)
   const [pages, setPages] = useState<number>(1)
 
   return (
     <div className={classes.slide}>
-      {base64 ? (
-        <Document file={base64} onLoadSuccess={pdf => setNumPages(pdf.numPages)} className={classes.slideView}>
-          <Page pageNumber={pages} />
-        </Document>
-      ) : (
-        <input
-          type="file"
-          className={classes.slideView}
-          onChange={e => {
-            const file = e!.target!.files![0]
-            const reader = new FileReader()
-            reader.readAsDataURL(file)
-            reader.onload = () => {
-              setBase64(reader.result as string)
-            }
-          }}
+      <Document file={{ url }} onLoadSuccess={pdf => setNumPages(pdf.numPages)} className={classes.slideView}>
+        <Page pageNumber={pages} />
+      </Document>
+      <div className={classes.slideUI}>
+        <Slider
+          aria-labelledby="input-slider"
+          valueLabelDisplay="auto"
+          step={1}
+          marks
+          min={1}
+          max={numPages}
+          value={pages}
+          onChange={(_, val) => setPages(val as number)}
         />
-      )}
-      <div className={classes.slideButton}>
-        <button disabled={pages <= 1} onClick={() => setPages(pages - 1)}>
-          Prev
-        </button>
-        <button disabled={pages >= numPages || !numPages} onClick={() => setPages(pages + 1)}>
-          Next
-        </button>
       </div>
     </div>
   )
